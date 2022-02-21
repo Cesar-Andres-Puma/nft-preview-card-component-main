@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+  --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+body {
+  font-size: 18px;
+  background-color: var(--Very-dark-blue-main-BG);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 1px);
+  font-family: "Outfit", sans-serif;
+}
+.container {
+  background-color: var(--Very-dark-blue-card-BG);
+  width: 19.5%;
+  margin: auto;
+  padding: 1.5%;
+  border-radius: 15px;
+}
+image {
+  position: relative;
+}
+
+.mainImg {
+  width: 100%;
+  height: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.image div {
+  position: absolute;
+  background-color: hsl(178, 100%, 50%, 60%);
+  top:17.5%;
+  width:16.5%;
+  height: 31.5%;
+  opacity: 0;
+}
+
+.image div:hover {
+  opacity: 1;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.baixo p > span:hover{
+  color: var(--Cyan);
+  transition: 0.5s;
+}
+
+.image div img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image .mainImg:hover + .hover-active {
+  display: block;
+}
+.container h2 {
+  color: var(--White);
+  margin: 6% 0;
+}
+.container p {
+  color: var(--Soft-blue);
+  line-height: 25px;
+}
+#colorido{
+  color:var(--Cyan);
+}
+.baixo img {
+  width: 40px;
+}
+.textos {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  padding: 20px 0;
+}
+.ection {
+ display: flex;
+  align-items: center;
+}
+.ection p{
+  padding-left: 7px;
+}
+.baixo {
+  margin: 5% 0 0 0;
+  display: flex;
+  align-items: center;
+}
+.img-cubo > img {
+  width: 100%;
+  border-radius: 10px;
+}
+.baixo p {
+  margin-left: 5%;
+}
+.baixo p > span {
+  color: var(--White);
+}
+main > hr {
+  border: none;
+  color: var(--Cyan);
+  background-color: var(--Very-dark-blue-line);
+  height: 1px;
+}
+h2:hover{
+  color: var(--Cyan);
+  cursor: pointer;
+  transition: 0.4s;
+}
+.attribution {
+  padding:2% 0;
+  font-size: 12px;
+  text-align: center;
+  color: rgb(192, 205, 216);
+}
+.attribution a {
+  color: hsl(0, 0%, 73%);
+}
+@media screen and (max-width:375px){
+ .container{
+   width: 90%;
+   padding: 7%;
+ }
+ .attribution{
+  padding: 5% 0;
+ }
+  
+}
